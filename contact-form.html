@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./assets/css/contact-form.css" />
+  </head>
+  <body style="margin: 0; background-color: #CACFD2">
+    <!-- NavBar -->
+    <nav>
+      <div class="left-side">
+        <a href="#">
+          <img src="./assets/img/dumbways.png" alt="logo" style="width: 40px; margin: 1px;"/>
+        </a>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./myproject.html">MyProject</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="#">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- Form Contact -->
+    <div class="form-contact">
+      <div class="container-form">
+        <form>
+          <h1 style="text-align: left; margin-left: 75px; padding: 15px;">GET IN TOUCH</h1>
+          <div>
+            <label">Name</label>
+            <input id="name" type="text" minlength="3" />
+          </div>
+          <div>
+            <label>Email</label>
+            <input id="email" type="text" />
+          </div>
+          <div>
+            <label>Phone Number</label>
+            <input id="phone" type="text" maxlength="13" />
+          </div>
+          <div>
+            <label>Subject</label>
+            <select id="subject">
+              <option value="Let's Talk">Pilihan 1</option>
+              <option value="Let's Collaboration">Pilihan 2</option>
+              <option value="I am Hiring">Pilihan 3</option>
+            </select>
+          </div>
+          <div>
+            <label>Your Message</label>
+            <textarea id="message" ></textarea>
+          </div>
+          <div style="display: flex; justify-content: end;">
+          <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/js/contact-form.js"></script>
+  </body>
+</html>
